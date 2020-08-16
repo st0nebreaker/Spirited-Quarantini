@@ -1,4 +1,4 @@
-# Spirited Quarantini
+# Stir Crazy
 ## Contributors
 - Becca Steinbrecher (GitHub: [b-stein](https://github.com/b-stein))
 - Alex Sodemann (GitHub: [asodemann18](https://github.com/asodemann18))
@@ -9,9 +9,9 @@
 
 A group [project](https://frontend.turing.io/projects/module-3/stretch.html) at Turing School of Software and Design.
 
-Spirited Quarantini is an application using [The Cocktail Database](https://www.thecocktaildb.com/). It helps teach others how to bartend from the comfort of their own home. With over 100 recipes to learn how to make delicious, refreshing beverages with confidence. 
+Stir Crazy is a cocktail recipe app powered by [The Cocktail Database](https://www.thecocktaildb.com/), created to bring a little happy hour magic to quarantine! With over 100 cocktail recipes to explore, users can learn to mix, shake, and stir delicious drinks from the comfort of their homes. Who says you can't be your own bartender?
 
-Users can login, search cocktails by ingredient type or name, view a randomized cocktail of the day, read up on cocktail instructions, and save or mark as tried for any drink.
+Users can log in, search cocktails by name or ingredient, discover a Cocktail of the Day, follow cocktail-making instructions, and save or log tried drink recipes. Whether you're a budding home bartender or simply looking for your favorite sip to take the edge off lockdown, Stir Crazy makes staying in a little more spirited! 
 
 ## Learning Goals
 - Implement a new technology in an app creation: TypeScript and React Hooks
