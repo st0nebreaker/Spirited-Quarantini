@@ -18,14 +18,12 @@ Users can log in, search cocktails by name or ingredient, discover a Cocktail of
 - Cover application with a robust testing suite, using Jest and React Testing Library
 
 ## In Action
-#### Logging in, viewing drinks
-![Login](https://media.giphy.com/media/XZrRlEYaqpQHBfrv1M/giphy.gif)
-#### Saving drinks, marking as tried
-![App Functionality](https://media.giphy.com/media/QZ1xm7CpoHIY9361pB/giphy.gif)
-#### Exploring navigation bar
-![App Functionality](https://media.giphy.com/media/ZcWptvsH8FPxisggqQ/giphy.gif)
-#### Searching by ingredient or drink name
-![App Functionality](https://media.giphy.com/media/TgPBFzkLkQ1rkmdHi6/giphy.gif)
+<img width="1332" height="881" alt="Screenshot 2026-10-17 at 4 32 14 PM" src="https://github.com/user-attachments/assets/d4be3c67-c1d3-4959-ae84-d14fc7305787" />
+<img width="1233" height="879" alt="Screenshot 2026-10-17 at 4 33 51 PM" src="https://github.com/user-attachments/assets/862d58c4-62a6-400c-9a8a-ddd71977dcfc" />
+<img width="1335" height="878" alt="Screenshot 2026-10-17 at 4 37 07 PM" src="https://github.com/user-attachments/assets/45162b03-a9dd-445e-b130-8b5c26ae4804" />
+<img width="1340" height="882" alt="Screenshot 2026-10-17 at 4 32 51 PM" src="https://github.com/user-attachments/assets/104e5da4-7f24-429e-bbde-8b24d508181c" />
+
+
 
 ## Setup
 View the deployed application [here](https://spiritedquarantini.netlify.app/ )
