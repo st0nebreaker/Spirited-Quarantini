@@ -19,9 +19,9 @@ Users can log in, search cocktails by name or ingredient, discover a Cocktail of
 
 ## In Action
 <img width="1332" height="881" alt="Screenshot 2026-10-17 at 4 32 14 PM" src="https://github.com/user-attachments/assets/d4be3c67-c1d3-4959-ae84-d14fc7305787" />
-<img width="1335" height="878" alt="Screenshot 2026-10-17 at 4 37 07 PM" src="https://github.com/user-attachments/assets/45162b03-a9dd-445e-b130-8b5c26ae4804" />
-<img width="1233" height="879" alt="Screenshot 2026-10-17 at 4 33 51 PM" src="https://github.com/user-attachments/assets/862d58c4-62a6-400c-9a8a-ddd71977dcfc" />
 <img width="1340" height="882" alt="Screenshot 2026-10-17 at 4 32 51 PM" src="https://github.com/user-attachments/assets/104e5da4-7f24-429e-bbde-8b24d508181c" />
+<img width="1233" height="879" alt="Screenshot 2026-10-17 at 4 33 51 PM" src="https://github.com/user-attachments/assets/862d58c4-62a6-400c-9a8a-ddd71977dcfc" />
+<img width="1335" height="878" alt="Screenshot 2026-10-17 at 4 37 07 PM" src="https://github.com/user-attachments/assets/45162b03-a9dd-445e-b130-8b5c26ae4804" />
 
 
 
