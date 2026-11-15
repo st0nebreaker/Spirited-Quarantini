@@ -1,11 +1,18 @@
+html,
 body {
   margin: 0;
-  font-family: 'Playfair Display', serif;
+  padding: 0;
+}
+body {
+  min-width: 320px;
+  background: #191715;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }

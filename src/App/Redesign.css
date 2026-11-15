@@ -1,0 +1,1049 @@
+.stir-app {
+  color-scheme: dark;
+  --bg: #191715;
+  --surface: #24211e;
+  --surface-raised: #302b25;
+  --on-accent: #211a12;
+  --text: #f3eadb;
+  --muted: #b7ac9b;
+  --line: #443c33;
+  --accent: #d4aa70;
+  --accent-hover: #e5bd87;
+  --serif: Georgia, "Times New Roman", serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100svh;
+  font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+.stir-app,
+.stir-app * {
+  box-sizing: border-box;
+}
+.stir-app button,
+.stir-app input {
+  font: inherit;
+}
+.stir-app button {
+  cursor: pointer;
+  color: inherit;
+  border: 0;
+  background: none;
+  touch-action: manipulation;
+}
+.stir-app button:focus-visible,
+.stir-app input:focus-visible,
+.stir-app a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.stir-app svg {
+  flex-shrink: 0;
+}
+.stir-app img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.stir-app h1,
+.stir-app h2,
+.stir-app h3,
+.stir-app p {
+  margin: 0;
+}
+.stir-app h1,
+.stir-app h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+}
+.stir-app .eyebrow {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+.stir-app .muted {
+  color: var(--muted);
+}
+.stir-app .site-header {
+  height: 88px;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  gap: 20px;
+}
+.stir-app .brand {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 37px;
+  letter-spacing: -2px;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 0;
+  text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
+}
+.stir-app .brand-star {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 10px;
+  color: var(--accent);
+  vertical-align: middle;
+}
+.stir-app nav {
+  display: flex;
+  gap: 34px;
+  height: 100%;
+  align-items: center;
+}
+.stir-app nav button {
+  height: 100%;
+  padding: 0;
+  position: relative;
+  font-size: 12px;
+  color: var(--muted);
+}
+.stir-app nav button.active {
+  color: var(--text);
+}
+.stir-app nav button.active:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  height: 2px;
+  background: var(--accent);
+  left: 0;
+  right: 0;
+}
+.stir-app .account-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 12px;
+  padding: 8px 0;
+  max-width: 180px;
+}
+.stir-app .account-button span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.stir-app .header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.stir-app main {
+  max-width: 1440px;
+  margin: auto;
+}
+.stir-app.is-home {
+  height: 100svh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.stir-app.is-home .site-header {
+  flex: 0 0 88px;
+  width: 100%;
+}
+.stir-app.is-home main {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+}
+.stir-app .home-page {
+  height: 100%;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+}
+.stir-app .browse-bar {
+  min-height: 79px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.stir-app .bar-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+.stir-app .browse-bar form {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  flex: 1;
+  min-width: 120px;
+}
+.stir-app .browse-bar input {
+  background: none;
+  border: 0;
+  width: 100%;
+  min-width: 0;
+  color: var(--text);
+  font-size: 12px;
+  padding: 10px 0;
+}
+.stir-app .browse-bar form button {
+  display: flex;
+  padding: 8px;
+}
+.stir-app .browse-links {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.stir-app .browse-links button,
+.stir-app .quick-searches button {
+  border: 1px solid var(--line);
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.stir-app .browse-links button:hover,
+.stir-app .quick-searches button:hover,
+.stir-app .quick-searches button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+.stir-app .browse-links .browse-all {
+  border: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-right: 0;
+}
+.stir-app .home-hero {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 6%;
+  padding: clamp(18px, 4vh, 48px) 0;
+}
+.stir-app .hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 0;
+}
+.stir-app .hero-copy > .eyebrow {
+  color: var(--accent);
+  margin-bottom: clamp(12px, 2.5vh, 26px);
+}
+.stir-app .hero-copy h1 {
+  font-size: 62px;
+  line-height: 1.04;
+}
+.stir-app .hero-description {
+  max-width: 330px;
+  color: var(--muted);
+  font-size: clamp(12px, 1.1vw, 15px);
+  line-height: 1.8;
+  margin-top: clamp(12px, 2.8vh, 30px);
+}
+.stir-app .primary-button,
+.stir-app .secondary-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  min-height: 44px;
+  padding: 13px 21px;
+  font-size: 12px;
+}
+.stir-app .primary-button {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+.stir-app .primary-button:hover {
+  background: var(--accent-hover);
+}
+.stir-app .secondary-button {
+  border: 1px solid var(--line);
+}
+.stir-app .hero-copy .primary-button {
+  margin-top: clamp(16px, 3.5vh, 36px);
+}
+.stir-app .hero-footnote {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: clamp(18px, 5vh, 60px);
+  color: var(--muted);
+  font-size: 11px;
+  font-style: italic;
+  font-family: var(--serif);
+}
+.stir-app .little-rule {
+  width: 30px;
+  height: 1px;
+  background: var(--muted);
+}
+.stir-app .weekly-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  min-height: 0;
+  background: var(--surface);
+  color: #fffaf0;
+}
+.stir-app .weekly-image,
+.stir-app .weekly-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.stir-app .weekly-image {
+  object-position: center 52%;
+}
+.stir-app .weekly-shade {
+  background: linear-gradient(
+    180deg,
+    rgba(20, 15, 10, 0.28),
+    transparent 35%,
+    rgba(20, 15, 10, 0.88)
+  );
+}
+.stir-app .weekly-label {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+.stir-app .weekly-label > span {
+  width: 6px;
+  height: 6px;
+  background: #e1bc70;
+  border-radius: 50%;
+}
+.stir-app .weekly-bottom {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+}
+.stir-app .weekly-bottom .eyebrow {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+.stir-app .weekly-bottom h2 {
+  font-size: clamp(32px, 4vw, 60px);
+  line-height: 1.1;
+  margin: 10px 0 7px;
+}
+.stir-app .weekly-bottom > p:last-of-type {
+  font-size: 12px;
+  color: #e0dfd1;
+}
+.stir-app .weekly-cta {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ffffff55;
+  margin-top: 22px;
+  padding: 18px 0 0;
+  color: inherit;
+  font-size: 12px;
+}
+.stir-app .home-footer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.03em;
+}
+.stir-app .home-footer button {
+  font-size: inherit;
+  padding: 0;
+}
+.stir-app .content-page {
+  padding: 42px 5% 60px;
+}
+.stir-app .page-intro > .eyebrow {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.stir-app .page-intro h1 {
+  font-size: 44px;
+  line-height: 1.15;
+}
+.stir-app .page-intro > .muted {
+  margin-top: 12px;
+}
+.stir-app .search-field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  margin-top: 28px;
+}
+.stir-app .search-field input {
+  color: var(--text);
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  padding: 9px 0;
+  font-size: 15px;
+}
+.stir-app .quick-searches {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 15px 0 30px;
+  flex-wrap: wrap;
+}
+.stir-app .quick-searches .browse-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.stir-app .quick-searches > span {
+  font-size: 11px;
+  color: var(--muted);
+  margin-right: 5px;
+}
+.stir-app .results-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 15px;
+}
+.stir-app .results-heading > div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.stir-app .results-heading h2 {
+  font-size: 28px;
+}
+.stir-app .rail-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+.stir-app .previous svg {
+  transform: rotate(180deg);
+}
+.stir-app .icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  flex-shrink: 0;
+}
+.stir-app .mobile-search,
+.stir-app .menu-button {
+  display: none;
+}
+.stir-app .weekly-save {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  background: rgba(25, 20, 15, 0.65);
+  border-color: #ffffff55;
+}
+.stir-app .recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+.stir-app .recipe-card {
+  min-width: 0;
+}
+.stir-app .card-image {
+  display: block;
+  width: 100%;
+  height: clamp(180px, 24vw, 300px);
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  background: var(--surface);
+}
+.stir-app .card-image img {
+  transition: transform 0.3s;
+}
+.stir-app .card-image:hover img {
+  transform: scale(1.035);
+}
+.stir-app .card-time {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--line);
+  padding: 5px 9px;
+  font-size: 10px;
+}
+.stir-app .card-copy {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 18px 0;
+}
+.stir-app .card-copy > div {
+  min-width: 0;
+}
+.stir-app .card-copy .eyebrow {
+  color: var(--accent);
+  font-size: 9px;
+}
+.stir-app .card-title {
+  font-family: var(--serif);
+  font-size: 27px;
+  letter-spacing: -0.04em;
+  padding: 0;
+  margin: 5px 0;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+.stir-app .card-copy .muted {
+  font-size: 11px;
+}
+.stir-app .text-button {
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+  padding: 14px 0 0;
+  font-size: 11px;
+}
+.stir-app .is-saved {
+  color: var(--accent);
+  background: var(--surface-raised);
+}
+.stir-app .empty-state {
+  text-align: center;
+  padding: 65px 20px;
+  border: 1px solid var(--line);
+}
+.stir-app .empty-state > svg {
+  margin: auto;
+}
+.stir-app .empty-state h2 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+.stir-app .empty-state p {
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+.stir-app .library-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  gap: 20px;
+}
+.stir-app .library-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--line);
+  gap: 20px;
+}
+.stir-app .library-tabs button {
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+}
+.stir-app .library-tabs .active {
+  border-color: var(--accent);
+}
+.stir-app .library-tabs span {
+  font-size: 10px;
+  margin-left: 7px;
+  color: var(--muted);
+}
+.stir-app .dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(10, 8, 6, 0.76);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.stir-app .sc-dialog {
+  border: 1px solid var(--line);
+  padding: 0;
+  position: relative;
+  max-height: 90svh;
+  max-width: calc(100vw - 32px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 30px 120px #0005;
+}
+.stir-app .modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 2;
+  background: var(--surface-raised);
+}
+.stir-app .recipe-modal {
+  width: 900px;
+}
+.stir-app .modal-image {
+  height: 230px;
+}
+.stir-app .modal-content {
+  padding: 30px;
+}
+.stir-app .modal-content h2 {
+  font-size: 46px;
+  line-height: 1.1;
+  margin: 10px 0 20px;
+}
+.stir-app .recipe-meta {
+  display: flex;
+  gap: 22px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.stir-app .recipe-meta span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.stir-app .recipe-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 25px 0;
+}
+.stir-app .recipe-columns h3 {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.stir-app .recipe-columns p,
+.stir-app .recipe-columns li {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.stir-app .recipe-columns ul {
+  padding-left: 18px;
+  margin: 0;
+}
+.stir-app .modal-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.stir-app .account-panel {
+  width: 430px;
+  padding: 45px 30px 30px;
+}
+.stir-app .account-panel h2 {
+  font-size: 36px;
+  line-height: 1.15;
+  margin: 15px 0;
+  overflow-wrap: anywhere;
+}
+.stir-app .account-panel label {
+  display: block;
+  margin: 25px 0 20px;
+  font-size: 12px;
+}
+.stir-app .account-panel input {
+  color: var(--text);
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  margin-top: 8px;
+}
+.stir-app .local-note {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+.stir-app .profile-stats {
+  display: flex;
+  gap: 35px;
+  margin: 28px 0;
+}
+.stir-app .profile-stats strong,
+.stir-app .profile-stats span {
+  display: block;
+}
+.stir-app .profile-stats strong {
+  font: 36px var(--serif);
+}
+.stir-app .profile-stats span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.stir-app .sign-out {
+  display: block;
+  text-decoration: underline;
+  margin-top: 20px;
+  font-size: 12px;
+  padding: 0;
+}
+.stir-app .age-note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 13px;
+  background: var(--surface-raised);
+  font-size: 11px;
+  color: var(--muted);
+}
+.stir-app .age-note strong {
+  font-size: 19px;
+  color: var(--accent);
+}
+.stir-app .signin-note {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 16px;
+}
+.stir-app input::placeholder {
+  color: var(--muted);
+  opacity: 0.85;
+}
+.stir-app .browse-bar input:focus-visible,
+.stir-app .search-field input:focus-visible {
+  outline: none;
+}
+.stir-app .browse-bar form:focus-within,
+.stir-app .search-field:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.stir-app .secondary-button:hover,
+.stir-app .icon-button:hover {
+  background: var(--surface-raised);
+}
+.stir-app .status-note {
+  color: var(--muted);
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.stir-app .about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6%;
+  margin-top: 40px;
+  align-items: center;
+}
+.stir-app .about-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.stir-app .about-content p {
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+.stir-app .about-content img {
+  max-height: 460px;
+}
+.stir-app .skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  transform: translateY(-200%);
+  z-index: 200;
+  padding: 12px;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+.stir-app .skip-link:focus {
+  transform: translateY(0);
+}
+@media (max-width: 1000px) {
+  .stir-app .bar-label {
+    display: none;
+  }
+  .stir-app .browse-bar {
+    gap: 15px;
+  }
+  .stir-app .home-hero {
+    gap: 5%;
+  }
+  .stir-app .hero-copy h1 {
+    font-size: clamp(38px, min(4.8vw, 8.2vh), 66px);
+  }
+}
+@media (max-width: 680px) {
+  .stir-app.is-home {
+    min-height: 600px;
+  }
+  .stir-app .site-header,
+  .stir-app.is-home .site-header {
+    height: 68px;
+    flex-basis: 68px;
+    position: relative;
+  }
+  .stir-app .brand {
+    font-size: 30px;
+  }
+  .stir-app .brand-star {
+    font-size: 19px;
+  }
+  .stir-app .header-actions {
+    gap: 8px;
+  }
+  .stir-app .mobile-search,
+  .stir-app .menu-button {
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+  }
+  .stir-app .account-button {
+    max-width: 110px;
+  }
+  .stir-app .account-button span {
+    display: none;
+  }
+  .stir-app nav {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    height: auto;
+    padding: 15px 5%;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+    z-index: 10;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 10px 25px #00000040;
+  }
+  .stir-app nav.nav-open {
+    display: flex;
+  }
+  .stir-app nav button {
+    font-size: 11px;
+    padding: 9px 0;
+  }
+  .stir-app .browse-bar {
+    flex-wrap: wrap;
+    gap: 0;
+    min-height: 0;
+    padding: 6px 0 9px;
+  }
+  .stir-app .browse-bar form {
+    flex-basis: 100%;
+    height: 36px;
+  }
+  .stir-app .browse-bar input {
+    font-size: 11px;
+  }
+  .stir-app .browse-links {
+    width: 100%;
+    gap: 7px;
+  }
+  .stir-app .browse-links button {
+    padding: 3px 12px;
+    font-size: 10px;
+  }
+  .stir-app .browse-links .browse-all {
+    margin-left: auto;
+  }
+  .stir-app .home-hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(260px, 1fr);
+    gap: 18px;
+    padding: 19px 0 14px;
+  }
+  .stir-app .hero-copy > .eyebrow {
+    margin-bottom: 8px;
+    font-size: 8px;
+  }
+  .stir-app .hero-copy h1 {
+    font-size: clamp(30px, min(8vw, 6.5svh), 48px);
+    line-height: 1.02;
+  }
+  .stir-app .hero-description {
+    font-size: 11px;
+    line-height: 1.5;
+    max-width: 360px;
+    margin-top: 10px;
+  }
+  .stir-app .hero-copy .primary-button,
+  .stir-app .hero-footnote {
+    display: none;
+  }
+  .stir-app .weekly-label {
+    top: 17px;
+    left: 18px;
+    font-size: 8px;
+  }
+  .stir-app .weekly-save {
+    top: 11px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+  }
+  .stir-app .weekly-bottom {
+    bottom: 18px;
+    left: 18px;
+    right: 18px;
+  }
+  .stir-app .weekly-bottom h2 {
+    font-size: 34px;
+    margin: 6px 0;
+  }
+  .stir-app .weekly-bottom > p:last-of-type {
+    font-size: 10px;
+  }
+  .stir-app .weekly-bottom .eyebrow {
+    font-size: 8px;
+  }
+  .stir-app .weekly-cta {
+    margin-top: 12px;
+    padding-top: 10px;
+    font-size: 11px;
+  }
+  .stir-app .home-footer {
+    height: 29px;
+    font-size: 8px;
+  }
+  .stir-app .home-footer button {
+    display: none;
+  }
+  .stir-app .content-page {
+    padding-top: 28px;
+  }
+  .stir-app .page-intro h1 {
+    font-size: 38px;
+  }
+  .stir-app .page-intro > .muted {
+    font-size: 12px;
+  }
+  .stir-app .recipe-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .stir-app .card-image {
+    height: 260px;
+  }
+  .stir-app .results-heading > div:first-child {
+    display: block;
+  }
+  .stir-app .results-heading .muted {
+    display: block;
+    font-size: 11px;
+  }
+  .stir-app .library-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .stir-app .recipe-columns {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .stir-app .modal-content {
+    padding: 23px;
+  }
+  .stir-app .modal-content h2 {
+    font-size: 37px;
+  }
+  .stir-app .modal-image {
+    height: 180px;
+  }
+  .stir-app .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+@media (max-height: 650px) and (min-width: 681px) {
+  .stir-app.is-home {
+    min-height: 540px;
+  }
+  .stir-app.is-home .site-header {
+    height: 64px;
+    flex-basis: 64px;
+  }
+  .stir-app .browse-bar {
+    min-height: 59px;
+  }
+  .stir-app .hero-footnote {
+    display: none;
+  }
+  .stir-app .home-hero {
+    padding: 18px 0;
+  }
+  .stir-app .hero-description {
+    line-height: 1.5;
+  }
+  .stir-app .weekly-bottom {
+    bottom: 20px;
+    left: 22px;
+    right: 22px;
+  }
+  .stir-app .weekly-cta {
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+}
+@media (max-height: 700px) and (max-width: 680px) {
+  .stir-app .home-hero {
+    gap: 12px;
+    padding: 12px 0;
+  }
+  .stir-app .hero-description {
+    display: none;
+  }
+  .stir-app .weekly-bottom h2 {
+    font-size: 29px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stir-app *,
+  .stir-app *::before,
+  .stir-app *::after {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
